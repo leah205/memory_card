@@ -1,72 +1,79 @@
-@font-face{
-    font-family: "fontDiner";
-    src: url('./assets/Fontdiner_Swanky/FontdinerSwanky-Regular.ttf');
+@font-face {
+  font-family: "fontDiner";
+  src: url("./assets/Fontdiner_Swanky/FontdinerSwanky-Regular.ttf");
 }
-*{
-    font-family: "fontDiner", 'monospace';
-   
+* {
+  font-family: "fontDiner", "monospace";
 }
-:root{
-    background: rgb(25, 25, 54);
-    --gold: rgb(150, 129, 7);
-    color: var(--gold);
+:root {
+  background: rgb(25, 25, 54);
+  --gold: rgb(150, 129, 7);
+  color: var(--gold);
 }
 
-body{
-   /* background-image: url('./assets/4217346.jpg');
+body {
+  /* background-image: url('./assets/4217346.jpg');
     background-size: cover;*/
-    height: 100vh;
+  height: 100vh;
 }
 
-.header{
-   
-    width: 100vw;
-    
-    gap: 20px;
+.header {
+  width: 100vw;
+
+  gap: 20px;
 }
-.lightning{
-    height: 350px;
-    position: absolute;
-    z-index: -1;
-    left: 20vw;
-    top: -2vh;
-    transform: rotate(-10deg)
+.lightning {
+  height: 350px;
+  position: absolute;
+  z-index: -1;
+  left: 20vw;
+  top: -2vh;
+  transform: rotate(-10deg);
 }
-.lightning.two{
-    left: 91vw;
-    top: -7vh;
-    transform: rotate(45deg);
+.lightning.two {
+  left: 91vw;
+  top: -7vh;
+  transform: rotate(45deg);
 }
-.lightning.three{
-    top: 50vh;
-    transform: rotate(-90deg);
-    left: 0;
-    height: 600px;
+.lightning.three {
+  top: 50vh;
+  transform: rotate(-90deg);
+  left: 0;
+  height: 600px;
 }
 
-h1{
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 10px;
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
-h2{
-    margin-bottom: 15px;
-    margin-top: 0px;
-    font-size: 2.2rem;
-    text-align: center;
+h2 {
+  margin-bottom: 15px;
+  margin-top: 0px;
+  font-size: 2.2rem;
+  text-align: center;
 }
 
-.game-over-message{
-    
-    background: white;
-    position: absolute;
-    position: absolute; 
-    left: 0; 
-    right: 0; 
-    top: 50%;
-    margin-inline: auto; 
-    width: 400px;
+.hidden {
+  display: none;
 }
-.hidden{
-    display: none;
+
+.reset-button,
+.next-level-button,
+.play-again-button {
+  height: 130px;
+  width: 300px;
+  font-size: 2.5rem;
+  margin: auto;
+  background: var(--gold);
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+.game-over {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  font-size: 4rem;
 }

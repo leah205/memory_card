@@ -1,23 +1,27 @@
-img{
-    height: 400px;
-    width: 230px;
-    object-fit: cover;
+img {
+  height: 400px;
+  width: 230px;
+  object-fit: cover;
 }
-.card{
-    background: rgb(118, 100, 3);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    padding: 12px 12px;
+.card {
+  background: rgb(118, 100, 3);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 12px 12px;
 }
-.card.lost{
-    background: rgb(116, 13, 13);
+.card.lost {
+  background: rgb(116, 13, 13);
 }
-.card.win{
-    background: rgb(7, 120, 7);
+.card.win {
+  background: rgb(7, 120, 7);
 }
 
-.card.small img{
-    height: 300px;
-    width: 170px;
+.card.small img {
+  height: 300px;
+  width: 170px;
+}
+.card.ultra-small img {
+  height: 200px;
+  width: 120px;
 }
