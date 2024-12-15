@@ -3,10 +3,9 @@ import React from "react";
 import "./App.css";
 import Level from "./components/Level";
 import Lightning from "./assets/light.svg";
-//get them to completely fill up the rows
-//change to shuffleCards in effect
+
 //double shuffle when level set back to zero
-//make responsive
+
 function App() {
   const [level, setLevel] = useState(10);
   // const [gameStart, setGameStart] = useState(false);
