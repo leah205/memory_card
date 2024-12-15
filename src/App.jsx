@@ -5,8 +5,6 @@ import Level from "./components/Level";
 import Lightning from "./assets/light.svg";
 //get them to completely fill up the rows
 //add game over message
-//adjust button color
-//dont swap after game end
 //add backgroun
 function App() {
   const [level, setLevel] = useState(0);

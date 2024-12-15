@@ -8,13 +8,13 @@ img{
     border-radius: 15px;
     display: flex;
     justify-content: center;
-    padding: 10px 10px;
+    padding: 12px 12px;
 }
 .card.lost{
-    background: red;
+    background: rgb(116, 13, 13);
 }
 .card.win{
-    background: green;
+    background: rgb(7, 120, 7);
 }
 
 .card.small img{
