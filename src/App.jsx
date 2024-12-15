@@ -6,6 +6,8 @@ import Lightning from "./assets/light.svg";
 //get them to completely fill up the rows
 //add game over message
 //add backgroun
+//disable event listener after round is over
+//follow screenshot to connect to remot
 function App() {
   const [level, setLevel] = useState(0);
   const [gameStart, setGameStart] = useState(false);
