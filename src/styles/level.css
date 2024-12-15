@@ -18,8 +18,7 @@
     margin: auto;
 }
 .score-board p{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 0px;
 }
 
 .reset-button,

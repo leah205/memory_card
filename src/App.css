@@ -7,19 +7,44 @@
    
 }
 :root{
-    background: rgb(189, 215, 238);
+    background: rgb(25, 25, 54);
+    color:rgb(150, 129, 7);
 }
 
-
+.header{
+   
+    width: 100vw;
+    
+    gap: 20px;
+}
+.lightning{
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+    left: 20vw;
+    top: -2vh;
+    transform: rotate(-10deg)
+}
+.lightning.two{
+    left: 91vw;
+    top: -7vh;
+    transform: rotate(45deg);
+}
+.lightning.three{
+    top: 50vh;
+    transform: rotate(-90deg);
+    left: 0;
+    height: 600px;
+}
 
 h1{
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 h2{
     margin-bottom: 15px;
     margin-top: 0px;
-    font-size: 3rem;
+    font-size: 2.2rem;
     text-align: center;
 }
