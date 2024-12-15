@@ -41,7 +41,7 @@ img {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
   .card {
     padding: 6px;
     border-radius: 5px;
