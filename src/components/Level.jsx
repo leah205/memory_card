@@ -49,9 +49,13 @@ export default function Level({ level, cards, setLevel }) {
   }
 
   function changeCardLost(name){
-    const repeated = charArr.filter((ele) => ele.name == name)[0];
-    repeated.lost = true;
-    setCharArr([...charArr.filter((ele) => ele.name != name), repeated]);
+    let newArr = charArr;
+    newArr.forEach((ele) => {
+      if(ele.name == name){
+        ele.lost = true;
+      }
+    })
+    setCharArr(newArr);
   }
 
   function addCard(name){
@@ -65,11 +69,14 @@ export default function Level({ level, cards, setLevel }) {
       if(score + 1 > bestScore){
         setBestScore(bestScore + 1);
       }
-      setCharArr(getShuffledArr(charArr))
-      if(score + 1 == cards){
-        
+       if(score + 1 == cards){
         setLevelWon(true);
+      } else {
+        console.log('shuffle');
+        setCharArr(getShuffledArr(charArr))
       }
+      
+      
     }
    
   }
@@ -95,7 +102,7 @@ export default function Level({ level, cards, setLevel }) {
       setCharArr(arr);
     };
     if (!charArr.length) {
-      console.log('hello');
+      
       fetchData();
     }
    
