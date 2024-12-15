@@ -59,7 +59,7 @@ export default function Level({ level, cards, setLevel }) {
   }
 
   function addCard(name){
-    
+    if(levelOver || levelWon) return;
     if(isRepeatCard(name)){
       changeCardLost(name)
       setLevelOver(true);
