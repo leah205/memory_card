@@ -1,0 +1,39 @@
+.card-container{
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 1500px;
+    column-gap:20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80vw;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.score-board{
+    font-size: 2rem;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+.score-board p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.reset-button,
+.next-level-button{
+    height: 100px;
+    width: 200px;
+    font-size: 2.5rem;
+    margin: auto;
+    background:  rgb(146, 146, 255);
+    border: 0;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+.hidden{
+    display: none;
+}

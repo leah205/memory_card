@@ -1,0 +1,18 @@
+img{
+    height: 400px;
+    width: 230px;
+    object-fit: cover;
+}
+.card{
+    background: rgb(146, 146, 255);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+}
+.card.lost{
+    background: red;
+}
+.card.win{
+    background: green;
+}
