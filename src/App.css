@@ -1,3 +1,13 @@
+@font-face{
+    font-family: "fontDiner";
+    src: url('./assets/Fontdiner_Swanky/FontdinerSwanky-Regular.ttf');
+}
+*{
+    font-family: "fontDiner", 'monospace';
+   
+}
+
+
 h1{
     font-size: 4rem;
     text-align: center;
