@@ -4,12 +4,13 @@ import "./App.css";
 import Level from "./components/Level";
 import Lightning from "./assets/light.svg";
 //get them to completely fill up the rows
-//add game over message
 //change to shuffleCards in effect
+//double shuffle when level set back to zero
+//make responsive
 function App() {
-  const [level, setLevel] = useState(11);
-  const [gameStart, setGameStart] = useState(false);
-  let gameOver = level == 8;
+  const [level, setLevel] = useState(10);
+  // const [gameStart, setGameStart] = useState(false);
+
   function resetGame() {
     setLevel(0);
   }

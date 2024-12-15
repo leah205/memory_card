@@ -1,38 +1,44 @@
-.card-container{
-    /*display: grid;
+.card-container {
+  /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 1500px;
     column-gap:20px;*/
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 80vw;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80vw;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
 }
-.score-board{
-    font-size: 2rem;
-    text-align: center;
-    width: 300px;
-    margin: auto;
+
+@media (max-width: 650px) {
+  .card-container {
+    width: 95vw;
+  }
 }
-.score-board p{
-    margin: 0px;
+.score-board {
+  font-size: 2rem;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+.score-board p {
+  margin: 0px;
 }
 
 .reset-button,
-.next-level-button{
-    height: 130px;
-    width: 300px;
-    font-size: 2.5rem;
-    margin: auto;
-    background:  var(--gold);
-    border: 0;
-    color: white;
-    border-radius: 10px;
-    display: block;
+.next-level-button {
+  height: 130px;
+  width: 300px;
+  font-size: 2.5rem;
+  margin: auto;
+  background: var(--gold);
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  display: block;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
