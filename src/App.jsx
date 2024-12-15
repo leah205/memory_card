@@ -4,9 +4,10 @@ import "./App.css";
 import Level from "./components/Level";
 import Lightning from "./assets/light.svg";
 //get them to completely fill up the rows
-//change font
+//add game over message
+//adjust button color
 //dont swap after game end
-//adjust card size to round
+//add backgroun
 function App() {
   const [level, setLevel] = useState(0);
   const [gameStart, setGameStart] = useState(false);
@@ -19,7 +20,9 @@ function App() {
     <img className = "lightning two" src={Lightning} alt="" />
     <img className = "lightning three" src={Lightning} alt="" />
 
-    <div className = {`game-over-message`}></div>
+    <div className = {`game-over-message ${gameOver? null: "hidden"}`}>
+      <p>Game over!</p>
+    </div>
       <div className="header">
         <h1>Memory Card</h1>
       </div>

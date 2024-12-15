@@ -8,7 +8,14 @@
 }
 :root{
     background: rgb(25, 25, 54);
-    color:rgb(150, 129, 7);
+    --gold: rgb(150, 129, 7);
+    color: var(--gold);
+}
+
+body{
+   /* background-image: url('./assets/4217346.jpg');
+    background-size: cover;*/
+    height: 100vh;
 }
 
 .header{
@@ -47,4 +54,19 @@ h2{
     margin-top: 0px;
     font-size: 2.2rem;
     text-align: center;
+}
+
+.game-over-message{
+    
+    background: white;
+    position: absolute;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 50%;
+    margin-inline: auto; 
+    width: 400px;
+}
+.hidden{
+    display: none;
 }

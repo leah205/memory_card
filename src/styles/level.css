@@ -23,11 +23,11 @@
 
 .reset-button,
 .next-level-button{
-    height: 200px;
+    height: 130px;
     width: 300px;
     font-size: 2.5rem;
     margin: auto;
-    background:  rgb(146, 146, 255);
+    background:  var(--gold);
     border: 0;
     color: white;
     border-radius: 10px;
