@@ -6,6 +6,10 @@
     font-family: "fontDiner", 'monospace';
    
 }
+:root{
+    background: rgb(189, 215, 238);
+}
+
 
 
 h1{

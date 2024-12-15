@@ -6,8 +6,10 @@ import "./App.css";
 import Level from "./components/Level";
 //get them to completely fill up the rows
 //change font
+//dont swap after game end
+//adjust card size to round
 function App() {
-  const [level, setLevel] = useState(0);
+  const [level, setLevel] = useState(3);
   const [gameStart, setGameStart] = useState(false);
 
   const cardsPerLevel = [4, 6, 8, 10, 12, 14, 16,18, 20];

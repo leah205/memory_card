@@ -16,3 +16,8 @@ img{
 .card.win{
     background: green;
 }
+
+.card.small img{
+    height: 300px;
+    width: 170px;
+}

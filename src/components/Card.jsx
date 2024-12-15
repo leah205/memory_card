@@ -1,7 +1,7 @@
 import React from 'react';
 import "../styles/card.css"
 
-export default function Card({ image, addCard, name, lost, win }) {
+export default function Card({ image, addCard, name, lost, win, level }) {
  
 
  function handleClick(e){
@@ -10,7 +10,7 @@ export default function Card({ image, addCard, name, lost, win }) {
  }
   return (
     <>
-      <div className = {`card ${lost? "lost": ""} ${win ? "win": ""}`} onClick = {(e) => handleClick(e)}>
+      <div className = {`card ${lost? "lost": ""} ${win ? "win": ""} ${level > 2? "small": null}`} onClick = {(e) => handleClick(e)}>
         <img src={image} alt = {name}></img>
         </div>
     </>

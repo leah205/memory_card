@@ -108,11 +108,20 @@ export default function Level({ level, cards, setLevel }) {
   </div>
   <div className="card-container">
     {charArr.map((ele) => {
-      return <Card  win = {levelWon} addCard = {addCard} key = {ele.id} image = {ele.image} name = {ele.name} lost = {ele.lost}></Card>
+      return <Card  
+      level = {level}
+      win = {levelWon}
+       addCard = {addCard} 
+       key = {ele.id}
+        image = {ele.image} 
+        name = {ele.name}
+         lost = {ele.lost}></Card>
     })}
   </div>
   <button onClick = {goToNextLevel}
   className = {`next-level-button ${levelWon? null : "hidden"}`}>Proceed to Level {level + 2}</button>
-  <button onClick = {resetLevel} className = {`reset-button ${levelOver? null : "hidden"}`}>Reset</button>
+  <button onClick = {resetLevel}
+   className = {`reset-button ${levelOver? null : "hidden"} `}>
+    Reset</button>
   </>;
 }
