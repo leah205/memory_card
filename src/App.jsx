@@ -7,7 +7,7 @@ import Lightning from "./assets/light.svg";
 //double shuffle when level set back to zero
 
 function App() {
-  const [level, setLevel] = useState(10);
+  const [level, setLevel] = useState(0);
   // const [gameStart, setGameStart] = useState(false);
 
   function resetGame() {
